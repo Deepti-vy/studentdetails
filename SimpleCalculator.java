@@ -22,5 +22,22 @@ public class SimpleCalculator {
         System.out.println("Addition: " + sum);
         System.out.println("Subtraction: " + difference);
         System.out.println("Multiplication: " + product);
+
+        // Power: num1 raised to the power of num2
+        double power = Math.pow(num1, num2);
+        System.out.println("Power (" + num1 + " raised to " + num2 + "): " + power);
+
+        // Square root of num1
+        if (num1 >= 0) {
+            double squareRoot = Math.sqrt(num1);
+            System.out.println("Square root of " + num1 + ": " + squareRoot);
+        } else {
+            System.out.println("Square root: Cannot compute square root of a negative number.");
+        }
+
+        // Cube root of num1
+        double cubeRoot = Math.cbrt(num1);
+        System.out.println("Cube root of " + num1 + ": " + cubeRoot)
+
     }
 }
